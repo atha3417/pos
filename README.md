@@ -25,10 +25,7 @@ Untuk menjalankan aplikasi ini, disarankan menggunakan [Laravel Herd](https://he
    cp .env.example .env
    php artisan key:generate
    ```
-4. Migrasi dan seed database:
-   ```
-   php artisan migrate --seed
-   ```
+4. Database sudah ada dan tidak perlu menjalankan database seeder
 5. Jalankan server lokal menggunakan Laravel Herd atau perintah:
    ```
    php artisan serve
