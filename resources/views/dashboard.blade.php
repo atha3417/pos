@@ -77,7 +77,8 @@
                 <div class="row">
                   <div class="col">
                     <h2 class="fw-bold text-white">
-                      Rp. 0 </h2>
+                      @indo_currency($total_income)
+                    </h2>
                   </div>
                 </div>
                 <div class="row">
@@ -110,7 +111,7 @@
                 <div class="row">
                   <div class="col">
                     <h2 class="fw-bold text-white">
-                      Rp. 0 </h2>
+                      @indo_currency($income_today)</h2>
                   </div>
                 </div>
                 <div class="row">

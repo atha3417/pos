@@ -13,6 +13,9 @@ class DashboardController extends Controller
         return view('dashboard', [
             'total_items' => Item::all()->count(),
             'total_transactions' => Transaction::all()->count(),
+            'total_income' => Transaction::sum('total'),
+            'income_today' => Transaction::whereDate('created_at', now())->sum('total'),
+            'income_this_month' => Transaction::whereMonth('created_at', now())->sum('total'),
         ]);
     }
 }
