@@ -50,6 +50,7 @@
                 data-status="{{ $transaction->status == 'paid' ? 'Lunas' : 'Hutang' }}"
                 data-note="{{ $transaction->note }}"
                 data-updated_at="{{ $transaction->updated_at->locale('id')->isoFormat('dddd, D MMMM Y') }}"
+                data-time="{{ $transaction->updated_at->locale('id')->isoFormat('HH:mm:ss') }}"
                 data-cashier="{{ $transaction->user->name }}" onclick="showDetail(this)">
                 <i class="fas fa-info-circle"></i>
               </button>

@@ -94,8 +94,8 @@
             <div class="col-md-6">
               <div class="form-group">
                 <div class="row align-items-center">
-                  <label for="total" class="col-md-4">Total</label>
-                  <div class="col-md-8">
+                  <label for="total" class="col-md-3">Total</label>
+                  <div class="col-md-9">
                     <input type="text" class="form-control" id="total" readonly>
                   </div>
                 </div>
@@ -116,8 +116,8 @@
             <div class="col-md-6">
               <div class="form-group">
                 <div class="row align-items-center">
-                  <label for="discount" class="col-md-4">Diskon</label>
-                  <div class="col-md-8">
+                  <label for="discount" class="col-md-3">Diskon</label>
+                  <div class="col-md-9">
                     <input type="text" class="form-control" id="discount" readonly>
                   </div>
                 </div>
@@ -138,8 +138,8 @@
             <div class="col-md-6">
               <div class="form-group">
                 <div class="row align-items-center">
-                  <label for="change" class="col-md-4">Kembalian</label>
-                  <div class="col-md-8">
+                  <label for="change" class="col-md-3">Kembalian</label>
+                  <div class="col-md-9">
                     <input type="text" class="form-control" id="change" readonly>
                   </div>
                 </div>
@@ -160,9 +160,9 @@
             <div class="col-md-6">
               <div class="form-group">
                 <div class="row align-items-center">
-                  <label for="date" class="col-md-4">Tanggal</label>
-                  <div class="col-md-8">
-                    <input type="text" class="form-control" id="date" readonly>
+                  <label for="time" class="col-md-3">time</label>
+                  <div class="col-md-9">
+                    <input type="text" class="form-control" id="time" readonly>
                   </div>
                 </div>
               </div>
@@ -182,8 +182,8 @@
             <div class="col-md-6">
               <div class="form-group">
                 <div class="row align-items-center">
-                  <label for="note" class="col-md-4">Catatan</label>
-                  <div class="col-md-8">
+                  <label for="note" class="col-md-3">Catatan</label>
+                  <div class="col-md-9">
                     <textarea class="form-control" id="note" readonly></textarea>
                   </div>
                 </div>
@@ -289,7 +289,7 @@
       $('#change').val(th.dataset.change ? indo_currency(th.dataset.change, true) : '-');
       $('#status').val(th.dataset.status ? th.dataset.status : '-');
       $('#cashier').val(th.dataset.cashier);
-      $('#date').val(th.dataset.updated_at);
+      $('#time').val(th.dataset.updated_at + ' | ' + th.dataset.time);
       $('#note').val(th.dataset.note);
       $('#detail_modal').modal('show');
     }
